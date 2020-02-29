@@ -1,0 +1,103 @@
+@import "node_modules/normalize.css/normalize";
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Regular-webfont.eot');
+    src: url('../font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/Roboto-Regular-webfont.woff') format('woff'),
+    url('../font/Roboto-Regular-webfont.ttf') format('truetype'),
+    url('../font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$bgColor: #333333;
+$highlightColor: #E2F237;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: $bgColor;
+    font-family: 'Roboto', sans-serif;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.main {
+    width: 170px;
+    height: 140px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(20px);
+
+    h1 {
+        margin: 0;
+        line-height: 1;
+        color: #fff;
+        font-weight: normal;
+        font-size: 2em;
+    }
+
+    h2 {
+        display: inline-block;
+        margin: 0.5em 0 0 0;
+        padding: 0.2em 0.5em;
+        line-height: 1.2;
+        color: $bgColor;
+        background-color: $highlightColor;
+        font-weight: normal;
+        font-size: 1em;
+    }
+
+    .highlighted {
+        color: $highlightColor;
+    }
+
+    .contact {
+        list-style: none;
+        margin: 0.5em 0 0 0;
+        padding: 0;
+        line-height: 1.2;
+        color: rgba(255,255,255,.8);
+        font-size: 1em;
+
+        li {
+            display: inline-block;
+
+            &::after {
+                content: '-';
+            }
+
+            &:last-child::after {
+                content: '';
+            }
+
+            a {
+                text-decoration: none;
+
+                &:visited, &:link {
+                    color: inherit;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#background {
+    width: 130%;
+    height: 130%;
+    position: fixed;
+    top: -15%;
+    left: -15%;
+}

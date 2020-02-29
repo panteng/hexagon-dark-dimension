@@ -1,0 +1,29 @@
+{
+  "name": "hexagon-dark-dimension",
+  "version": "0.1.0",
+  "author": "Chris Pan <chrispan.pt@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panteng/hexagon-dark-dimension.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "browser-sync": "^2.24.7",
+    "browserify": "^16.2.2",
+    "cssnano": "^4.0.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "run-sequence": "^2.2.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
